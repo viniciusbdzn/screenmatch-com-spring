@@ -13,11 +13,13 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Principal {
+
     private Scanner leitura = new Scanner(System.in);
     private ConsumoApi consumo = new ConsumoApi();
     private ConverteDados conversor = new ConverteDados();
     private final String ENDERECO = "https://www.omdbapi.com/?t=";
     private final String API_KEY = "&apikey=ed25e5a";
+
     public void exibeMenu() {
         System.out.println("Digite o nome da série para a busca: ");
         var nomeSerie = leitura.nextLine();
