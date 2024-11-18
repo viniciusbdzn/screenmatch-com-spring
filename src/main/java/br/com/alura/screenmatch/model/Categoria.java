@@ -20,6 +20,6 @@ public enum Categoria {
                 return categoria;
             }
         }
-        throw new IllegalArgumentException("Nenhuma categoria encontrada para a série!" + text);
+        throw new IllegalArgumentException("Nenhuma categoria encontrada para a série! " + text);
     }
 }
