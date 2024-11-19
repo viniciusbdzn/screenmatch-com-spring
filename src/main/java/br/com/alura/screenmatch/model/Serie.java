@@ -21,6 +21,7 @@ public class Serie {
     private Categoria genero;
     private String atores;
     private String poster;
+    @Column(length = 500)
     private String sinopse;
 
     @OneToMany(mappedBy = "serie", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
